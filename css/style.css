@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+    color: #fff;
+}
+
+button{
+    border-color: #fff;
+}
