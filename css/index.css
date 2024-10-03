@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+/* Contenedor principal que centra el contenido */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido de la imagen y el botón */
+.content {
+    position: relative;
+}
+
+/* Imagen que se adapta */
+.main-image {
+    width: 100%;
+    display: block;
+}
+
+/* Botón centrado sobre la imagen */
+.btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #161616;
+    color: #f0cebd;
+    text-decoration: none;
+    font-size: 25px;
+    border: #f0cebd 2px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #201818;
+}

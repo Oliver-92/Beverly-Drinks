@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
-    background-color: black;
-    color: #fff;
+    background-color: #212222; 
+    color: #d8c190;
 }
 
-button{
-    border-color: #fff;
+hr{
+    border: #d8c190 1px solid;
 }
