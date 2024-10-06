@@ -1,36 +1,28 @@
-body {
+body{
     margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: start;
     background-color: #161616;
 }
 
-
-
-/* Contenido de la imagen y el botón */
-.content {
-    position: relative;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
-/* Imagen que se adapta */
-.main-image {
+.main-image{
     width: 100%;
+    max-width: 1000px;
 }
 
-/* Botón centrado sobre la imagen #f0cebd*/
 .btn {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 10px 20px;
     background-color: #161616;
     color: #f0d8cd;
     text-decoration: none;
     font-family: "Merriweather", serif;
-    font-size: clamp(1.2em, 2vw - 1rem, 1.5em);
+    font-size: clamp(1em, 2vw - 1rem, 1.5em);
+    margin-top: 20px;
     border: #f0d8cd 2px solid;
     border-radius: 5px;
     text-align: center;
@@ -39,19 +31,19 @@ body {
 
 @keyframes heartbeat {
     0% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: scale(1);
     }
     25% {
-        transform: translate(-50%, -50%) scale(0.9);
+        transform: scale(0.95);
     }
     50% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: scale(1);
     }
     85% {
-        transform: translate(-50%, -50%) scale(0.9);
+        transform: scale(0.95);
     }
     100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: scale(1);
     }
 }
 
