@@ -16,17 +16,22 @@ header{
     position: fixed;
     top: 0;
     z-index: 10000;
-    font-size: clamp(0.9em, 3vw - 1em, 1.3em);
+    font-size: clamp(0.8em, 3vw - 1em, 1.3em);
+    min-height: 130px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 5px 0;
+    height: 100px;
 }
 
 nav a img{
-    min-width: 200px;
+    min-width: 150px;
+    height: auto;
+    max-height: 100px;
 }
 
 ul{
@@ -35,7 +40,7 @@ ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-right: clamp(1%, 10vw, 20%)
+    margin-right: clamp(1%, 10vw, 5%)
 }
 
 li{
@@ -47,7 +52,7 @@ li a{
 }
 
 main{
-    margin-top: 135px;
+    margin-top: 130px;
 }
 
 #top{
@@ -68,7 +73,37 @@ img{
 
 #sucursales{
     scroll-margin-top: 130px;
+    max-width: 100vw;
 }
+
+.card{
+    display: flex;
+    gap: 0 20px;
+    margin: 30px 0 60px 0;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 60%;
+    min-width: 450px;
+    max-width: 1300px;
+    border: #d8c190 1px solid;
+}
+
+.card-img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.class-info{
+    font-size: clamp(0.8em, 3vw - 1em, 1.1em);;
+}
+
+iframe{
+    width: clamp(450px, 30vw - 100px, 650px);
+    height: 50%;
+}
+
 
 #contacto{
     scroll-margin-top: 130px;
@@ -117,4 +152,26 @@ textarea{
 
 .btn:hover{
     background-color: #201818;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: clamp(0.8em, 3vw - 1em, 1rem)
+}
+
+.icon{
+    width: 40px;
+    margin: 10px 10px;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+footer a{
+    text-decoration: none;
 }
