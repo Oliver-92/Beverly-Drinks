@@ -4,66 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Beverly Drinks</title>
 </head>
-<body>
+<body id="top">
     <header>
         <nav>
-            <a href="#">
+            <a href="#top">
                 <img src="./img/Logo_3.1.png" alt="Logo" height="100px">
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="#tragos">Tragos</a></li>
-                <li><a href="#contacto">Contactanos</a></li>
                 <li><a href="#sucursales">Sucursales</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
         <hr>
     </header>
     <main>
-        <section>
-            <img src="./img/banner_2.png" alt="" height="100%">
+        <section id="banner">
+            <img src="./img/banner_2.png" alt="banner">
             <hr>
         </section>
-        <section>
-            <h2 id="#tragos">Nuestros Tragos</h2>
+        <section id="tragos">
+            <h2>Nuestros Tragos</h2>
             <img src="img\drink-01.jpg" alt="tragos" width="1000px">
             <hr>
         </section>
+        <section id="sucursales">
+            <h2>Sucursales</h2>
+            <img src="./img/bar-01.jpg" alt="bar-fachada" width="1000px">
+            <img src="./img/bar-02.jpg" alt="bar-fachada" width="1000px">
+            <img src="./img/bar-03.jpg" alt="bar-fachada" width="1000px">
+            <hr>
+        </section>
         <section>
-            <section>
-                <h2 id="contacto">Contactanos</h2>
-                <form action="https://formspree.io/f/xblrvqab" method="post">
-                    <label for="name">Nombre: </label>
-                    <input size="30" type="text" name="name">
-                    <br>
-                    <label for="phone">Teléfono: </label>
-                    <input size="30" type="number" name="phone">
-                    <br>
-                    <label for="mail">Email: </label>
-                    <input size="30" type="email" name="mail">
-                    <br>
-                    <label for="comment">Comentario:</label>
-                    <textarea name="comment" id=""></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </form>
+            <section id="contacto">
+                <h2>Contactanos</h2>
+                <div class="container-contact">
+                    <img src="./img/contacto.jpg" alt="barman-sonriente">
+                    <form action="https://formspree.io/f/xblrvqab" method="post">
+                        <label for="name">Nombre: </label>
+                        <input size="30" type="text" name="name">
+                        
+                        <label for="phone">Teléfono: </label>
+                        <input size="30" type="number" name="phone">
+                        
+                        <label for="mail">Email: </label>
+                        <input size="30" type="email" name="mail">
+                        
+                        <label for="comment">Comentario:</label>
+                        <textarea name="comment" id=""></textarea>
+                        
+                        <input class="btn" type="submit" value="Enviar">
+                        <input class="btn" type="reset" value="Borrar">
+                    </form>
+                </div>
             </section>
             <hr>
-            <section>
-                <h2 id="sucursales">Sucursales</h2>
-                <img src="./img/bar-01.jpg" alt="bar-fachada" width="1000px">
-                <img src="./img/bar-02.jpg" alt="bar-fachada" width="1000px">
-                <img src="./img/bar-03.jpg" alt="bar-fachada" width="1000px">
-                <hr>
-            </section>
         </section>
     </main>
     <footer>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Mail</p>
+        <a href="www.facebook.com" target="_blank">Facebook</a>
+        <a href="www.instagram.com" target="_blank">Instagram</a>
+        <a href="www.hotmail.com" target="_blank">Email</a>
     </footer>
     
 </body>
