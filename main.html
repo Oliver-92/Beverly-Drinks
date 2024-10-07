@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Iconos-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
     <title>Beverly Drinks</title>
     <link rel="icon" href="./img/coctel.png" type="image/png">
 </head>
@@ -33,6 +35,7 @@
         <section id="tragos">
             <h2>Nuestros Tragos</h2>
             <img src="img\drink-01.jpg" alt="tragos" width="1000px">
+            <p>Agregar carrusel de tragos</p>
             <hr>
         </section>
         <section id="sucursales">
@@ -84,16 +87,16 @@
                     <img src="./img/contacto.jpg" alt="barman-sonriente">
                     <form action="https://formspree.io/f/xblrvqab" method="post">
                         <label for="name">Nombre: </label>
-                        <input size="30" type="text" name="name">
+                        <input type="text" name="name" id="name">
                         
                         <label for="phone">Teléfono: </label>
-                        <input size="30" type="number" name="phone">
+                        <input type="tel" name="phone" id="phone">
                         
-                        <label for="mail">Email: </label>
-                        <input size="30" type="email" name="mail">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
                         
                         <label for="comment">Comentario:</label>
-                        <textarea name="comment" id=""></textarea>
+                        <textarea name="comment" id="comment"></textarea>
                         
                         <input class="btn" type="submit" value="Enviar">
                         <input class="btn" type="reset" value="Borrar">
@@ -105,9 +108,9 @@
     <footer>
         <p>Encontranos en nuestras redes sociales</p>
         <div>
-            <a href="www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook-icon" class="icon"></a>
-            <a href="www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="instagram-icon" class="icon"></a>
-            <a href="www.hotmail.com" target="_blank"><img src="./img/twiter.png" alt="twiter-icon" class="icon"></a>
+            <a href="www.facebook.com" target="_blank"><i class="fi fi-brands-facebook"></i></a>
+            <a href="www.instagram.com" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+            <a href="www.hotmail.com" target="_blank"><i class="fi fi-brands-twitter"></i></a>
         </div>
         <p>2024. Todos los derechos reservados. Site by <a href="https://www.linkedin.com/in/ezequiel-oliver/" target="_blank">Ezequiel Oliver</a></p>
     </footer>
