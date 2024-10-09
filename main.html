@@ -38,13 +38,17 @@
         </section>
         <section id="tragos">
             <h2>Nuestros Tragos</h2>
-            <img src="img\drink-01.jpg" alt="tragos" width="1000px">
-            <p>Agregar carrusel de tragos</p>
+            <div id="first-carousel" class="carousel">
+                <div class="carousel-track"></div>
+                <button class="carousel-button prev">⬅</button>
+                <button class="carousel-button next">➡</button>
+            </div>
+            
             <hr>
         </section>
         <section id="sucursales">
             <h2>Sucursales</h2>
-            <div class="carousel">
+            <div class="carousel" id="carousel-2">
                 <div class="carousel-track-container">
                     <ul class="carousel-track">
                         <!-- Primera tarjeta -->
@@ -144,31 +148,14 @@
         <p>2024. Todos los derechos reservados. Site by <a href="https://www.linkedin.com/in/ezequiel-oliver/"
                 target="_blank">Ezequiel Oliver</a></p>
     </footer>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/api.js"></script>
     <script>
-        const track = document.querySelector('.carousel-track');
-        const slides = Array.from(track.children);
-        const nextButton = document.querySelector('.next');
-        const prevButton = document.querySelector('.prev');
-        let currentSlide = 0;
-
-        nextButton.addEventListener('click', () => {
-            if (currentSlide < slides.length - 1) {
-                currentSlide++;
-            } else {
-                currentSlide = 0; // Vuelve al primer slide
-            }
-            track.style.transform = `translateX(-${100 * currentSlide}%)`;
+        // Inicializar carruseles por ID
+        initCarousel('#first-carousel .carousel-track').then(() => {
+            setupCarousel('#first-carousel .carousel-track', '#first-carousel .next', '#first-carousel .prev');
         });
-
-        prevButton.addEventListener('click', () => {
-            if (currentSlide > 0) {
-                currentSlide--;
-            } else {
-                currentSlide = slides.length - 1; // Vuelve al último slide
-            }
-            track.style.transform = `translateX(-${100 * currentSlide}%)`;
-        });
-
+        setupCarousel('#carousel-2 .carousel-track', '#carousel-2 .next', '#carousel-2 .prev');
     </script>
 </body>
 

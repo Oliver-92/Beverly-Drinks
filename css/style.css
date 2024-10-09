@@ -86,6 +86,8 @@ img {
     overflow: hidden;
 }
 
+
+
 .carousel-track-container {
     position: relative;
     width: 100%;
@@ -94,10 +96,18 @@ img {
 
 .carousel-track {
     display: flex;
+    align-items: center;
     transition: transform 0.5s ease-in-out;
     padding: 1rem;
 }
-
+.carousel-slide {
+    min-width: 300px;  /* Tamaño de los elementos */
+    margin: 0 10px;    /* Espacio entre los slides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .carousel-slide {
     min-width: 100%;
     margin: 0 1rem;
@@ -111,7 +121,6 @@ img {
 
 .card-img {
     width: 70%;
-    min-width: 345px;
     max-width: 1300px;
     border: #d8c190 1px solid;
     flex-grow: 2;
@@ -138,11 +147,15 @@ img {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgba(255,255,255,0.8);
     border: none;
     font-size: 2em;
     cursor: pointer;
     z-index: 1;
+}
+
+.carousel-button:hover{
+    color: white;
 }
 
 .prev {
