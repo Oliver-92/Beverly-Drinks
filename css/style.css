@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
     background-color: #212222;
     color: #d8c190;
     font-family: "Merriweather", serif;
@@ -18,6 +19,7 @@ header {
     z-index: 10000;
     font-size: clamp(0.8em, 3vw - 1em, 1.3em);
     min-height: 130px;
+    box-shadow: 3px 5px 5px #d8c190;
 }
 
 nav {
@@ -60,23 +62,32 @@ main {
     scroll-margin-top: 135px;
 }
 
-#banner img {
-    width: 100%;
+#banner{
+    margin-bottom: 10px;
 }
 
-img {
-    max-width: 100%;
+.banner-container{
+    width: auto;
+    height: 100vh;
+    background-image: url(/img/banner-04.jpeg);
+    background-size:cover;
+    border: #d8c190 1px solid;
 }
 
 #tragos {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 140px;
     width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 #sucursales {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 140px;
     width: 100%;
     max-width: 100vw;
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 /* Estilos generales del carrusel */
@@ -85,8 +96,6 @@ img {
     width: 100%;
     overflow: hidden;
 }
-
-
 
 .carousel-track-container {
     position: relative;
@@ -114,9 +123,11 @@ img {
 }
 
 .card {
+    width: 100%;
     display: flex;
-    gap: 0 20px;
+    gap: 0 40px;
     flex-wrap: wrap;
+    padding: 0 7rem;
 }
 
 .card-img {
@@ -129,16 +140,28 @@ img {
 .card-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:fill;
 }
 
-.class-info {
-    font-size: clamp(0.8em, 3vw - 1em, 1.1em);
-    width: 28%;
-    flex-wrap: wrap;
+.card-info{
     flex-grow: 1;
 }
 
+.card-info-text {
+    font-size: clamp(0.8em, 3vw - 1em, 1.1em);
+    height: 45%;
+    line-height: 3rem;
+}
+
+.card-info-map{
+    width: 100%;
+    height: 45%;
+}
+
+iframe {
+    width: 80%;
+    height: 100%;
+}
 
 
 /* Botones de navegación */
@@ -166,15 +189,9 @@ img {
     right: 10px;
 }
 
-iframe {
-    width: 70%;
-    height: 40%;
-}
-
-
-
 #contacto {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 140px;
+    padding: 0 10px;
 }
 
 .container-contact {
@@ -187,6 +204,7 @@ iframe {
     max-width: 50%;
     height: auto;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 form {
@@ -242,6 +260,36 @@ footer a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 482px) {
-    /* Tus estilos para pantallas pequeñas */
+
+
+
+
+/* Teléfonos pequeños (320px - 480px) */
+@media only screen and (max-width: 480px) {
+    /* Estilos para teléfonos pequeños */
+}
+
+/* Teléfonos medianos (481px - 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Estilos para teléfonos medianos */
+}
+
+/* Tabletas (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tabletas */
+}
+
+/* Laptops y desktops pequeñas (1025px - 1280px) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos para laptops y desktops pequeñas */
+}
+
+/* Laptops y desktops grandes (1281px - 1600px) */
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    /* Estilos para laptops y desktops grandes */
+}
+
+/* Pantallas extra grandes (>1600px) */
+@media only screen and (min-width: 1601px) {
+    /* Estilos para pantallas extra grandes */
 }
