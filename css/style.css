@@ -53,6 +53,14 @@ li a {
     text-decoration: none;
 }
 
+li a:hover {
+    text-shadow: 0 0 5px #ffffff, /* Ajusta el color del brillo */
+                 0 0 10px #ffffff,
+                 0 0 15px #d8c190; 
+                             
+    transition: text-shadow 0.3s ease-in-out; /* Suaviza la transición */
+}
+
 main {
     margin-top: 130px;
     width: 100%;
@@ -62,15 +70,15 @@ main {
     scroll-margin-top: 135px;
 }
 
-#banner{
+#banner {
     margin-bottom: 10px;
 }
 
-.banner-container{
+.banner-container {
     width: auto;
     height: 100vh;
-    background-image: url('img/banner-04.jpeg');
-    background-size:cover;
+    background-image: url('../img/banner-04.jpeg');
+    background-size: cover;
     border: #d8c190 1px solid;
 }
 
@@ -81,6 +89,61 @@ main {
     margin-bottom: 10px;
     padding: 0 10px;
 }
+
+/* Estilo de cada slide del carrusel */
+.carousel-slide-drink {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+/* Estilo de la imagen del trago */
+.carousel-slide-drink img {
+    border: #d8c190 3px solid;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del nombre del trago */
+.carousel-slide-drink h3 {
+    font-size: 1.5em;
+    color: #d8c190;
+    margin: 10px 0;
+    font-family: "Merriweather", serif;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 #sucursales {
     scroll-margin-top: 140px;
@@ -109,18 +172,16 @@ main {
     transition: transform 0.5s ease-in-out;
     padding: 1rem;
 }
+
 .carousel-slide {
-    min-width: 300px;  /* Tamaño de los elementos */
-    margin: 0 10px;    /* Espacio entre los slides */
+    min-width: 100%;
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.carousel-slide {
-    min-width: 100%;
-    margin: 0 1rem;
-}
+
 
 .card {
     width: 100%;
@@ -140,10 +201,10 @@ main {
 .card-img img {
     width: 100%;
     height: 100%;
-    object-fit:fill;
+    object-fit: fill;
 }
 
-.card-info{
+.card-info {
     flex-grow: 1;
 }
 
@@ -153,7 +214,7 @@ main {
     line-height: 3rem;
 }
 
-.card-info-map{
+.card-info-map {
     width: 100%;
     height: 45%;
 }
@@ -161,32 +222,6 @@ main {
 iframe {
     width: 80%;
     height: 100%;
-}
-
-
-/* Botones de navegación */
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(255,255,255,0.8);
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.carousel-button:hover{
-    color: white;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
 #contacto {
@@ -256,8 +291,20 @@ footer {
     font-size: 20px;
 }
 
+footer div, p{
+    margin: 10px 0;
+}
+
 footer a {
     text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 5px #ffffff, /* Ajusta el color del brillo */
+                 0 0 10px #ffffff,
+                 0 0 15px #d8c190; 
+                             
+    transition: text-shadow 0.3s ease-in-out; /* Suaviza la transición */
 }
 
 

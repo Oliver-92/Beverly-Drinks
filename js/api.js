@@ -15,7 +15,7 @@ function renderCocktails(drinks, trackId) {
     const track = document.querySelector(trackId);  // Identificar el carrusel correspondiente
     drinks.forEach((drink, index) => {
         const slide = document.createElement('div');
-        slide.classList.add('carousel-slide');
+        slide.classList.add('carousel-slide-drink');
         // Añadir la clase 'active' al primer slide
         if (index === 0) {
             slide.classList.add('active');
