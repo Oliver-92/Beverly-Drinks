@@ -11,7 +11,11 @@ hr {
     border: #d8c190 1px solid;
 }
 
-header {
+h2{
+    margin-bottom: 30px;
+}
+
+.header {
     width: 100%;
     padding: 0;
     position: fixed;
@@ -36,7 +40,7 @@ nav a img {
     max-height: 100px;
 }
 
-ul {
+.header ul {
     padding: 0;
     list-style: none;
     display: flex;
@@ -45,15 +49,15 @@ ul {
     margin-right: clamp(1%, 10vw, 5%)
 }
 
-li {
+.header li {
     margin: 0 clamp(0.1em, 4vw - 1em, 5em);
 }
 
-li a {
+.header li a {
     text-decoration: none;
 }
 
-li a:hover {
+.header li a:hover {
     text-shadow: 0 0 5px #ffffff, /* Ajusta el color del brillo */
                  0 0 10px #ffffff,
                  0 0 15px #d8c190; 
@@ -76,21 +80,24 @@ main {
 
 .banner-container {
     width: auto;
-    height: 100vh;
+    height: 90vh;
     background-image: url('../img/banner-04.jpeg');
     background-size: cover;
-    border: #d8c190 1px solid;
+    border-bottom: #d8c190 1px solid;
 }
 
 #tragos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     scroll-margin-top: 140px;
     width: 100%;
-    height: 100%;
+    height: 87vh;
     margin-bottom: 10px;
     padding: 0 10px;
 }
 
-/* Estilo de cada slide del carrusel */
+/* Estilo de cada slide del carrusel de drinks */
 .carousel-slide-drink {
     min-width: 100%;
     display: flex;
@@ -188,14 +195,14 @@ main {
     display: flex;
     gap: 0 40px;
     flex-wrap: wrap;
-    padding: 0 7rem;
 }
 
 .card-img {
-    width: 70%;
+    width: 60%;
     max-width: 1300px;
     border: #d8c190 1px solid;
     flex-grow: 2;
+    background-size: cover;
 }
 
 .card-img img {
@@ -206,12 +213,20 @@ main {
 
 .card-info {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .card-info-text {
-    font-size: clamp(0.8em, 3vw - 1em, 1.1em);
+    font-size: clamp(0.7em, 3vw - 1em, 1.1em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 45%;
-    line-height: 3rem;
+    max-height: 45%;
+    /*height: 45%;
+    line-height: 2rem;*/
 }
 
 .card-info-map {
@@ -227,6 +242,7 @@ iframe {
 #contacto {
     scroll-margin-top: 140px;
     padding: 0 10px;
+    
 }
 
 .container-contact {
@@ -238,8 +254,10 @@ iframe {
 .container-contact img {
     max-width: 50%;
     height: auto;
-    object-fit: cover;
+    max-height: 85vh;
+    object-fit:cover;
     margin-bottom: 10px;
+    border: #d8c190 1px solid;
 }
 
 form {
@@ -247,7 +265,7 @@ form {
     flex-direction: column;
     width: 40%;
     min-width: 150px;
-    max-width: 400px;
+    max-width: 500px;
     font-size: clamp(15px, 2.5vw - 1em, 1.2rem)
 }
 
@@ -306,6 +324,15 @@ footer a:hover {
                              
     transition: text-shadow 0.3s ease-in-out; /* Suaviza la transición */
 }
+
+@media only screen and (max-width: 800px) {
+/* carrusel de drinks */
+.carousel-slide-drink {
+    align-items: normal;
+    
+}
+}
+
 
 
 
