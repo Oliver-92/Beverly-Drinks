@@ -254,7 +254,7 @@ iframe {
 .container-contact img {
     max-width: 50%;
     height: auto;
-    max-height: 80vh;
+    max-height: 74vh;
     object-fit:cover;
     margin-bottom: 10px;
     border: #d8c190 1px solid;
@@ -333,9 +333,30 @@ footer a:hover {
 }
 }
 
+@media only screen and (max-width: 525px) {
+    nav {
+        justify-content: flex-start;
+    }
+    nav a img {
+        min-width: 120px;
+        height: auto;
+        max-height: 70px;
+    }
+}
 
-
-
+@media only screen and (max-width: 418px) {
+    .header{
+        font-size: clamp(0.65em, 3vw - 1em, 1.3em);
+    }
+    nav a img {
+        min-width: 120px;
+        height: auto;
+        max-height: 50px;
+    }
+    footer{
+        font-size: clamp(0.6em, 4vw - 1em, 1rem)
+    }
+}
 
 
 /* Teléfonos pequeños (320px - 480px) */
