@@ -11,7 +11,7 @@ hr {
     border: #d8c190 1px solid;
 }
 
-h2{
+h2 {
     margin-bottom: 30px;
 }
 
@@ -58,11 +58,13 @@ nav a img {
 }
 
 .header li a:hover {
-    text-shadow: 0 0 5px #ffffff, /* Ajusta el color del brillo */
-                 0 0 10px #ffffff,
-                 0 0 15px #d8c190; 
-                             
-    transition: text-shadow 0.3s ease-in-out; /* Suaviza la transición */
+    text-shadow: 0 0 5px #ffffff,
+        /* Ajusta el color del brillo */
+        0 0 10px #ffffff,
+        0 0 15px #d8c190;
+
+    transition: text-shadow 0.3s ease-in-out;
+    /* Suaviza la transición */
 }
 
 main {
@@ -242,7 +244,7 @@ iframe {
     scroll-margin-top: 140px;
     padding: 0 10px;
     max-height: 85vh;
-    
+
 }
 
 .container-contact {
@@ -255,7 +257,7 @@ iframe {
     max-width: 50%;
     height: auto;
     max-height: 74vh;
-    object-fit:cover;
+    object-fit: cover;
     margin-bottom: 10px;
     border: #d8c190 1px solid;
 }
@@ -264,7 +266,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 40%;
-    min-width: 150px;
+    min-width: 140px;
     max-width: 500px;
     font-size: clamp(15px, 2.5vw - 1em, 1.2rem)
 }
@@ -309,7 +311,8 @@ footer {
     font-size: 20px;
 }
 
-footer div, p{
+footer div,
+p {
     margin: 10px 0;
 }
 
@@ -318,25 +321,29 @@ footer a {
 }
 
 footer a:hover {
-    text-shadow: 0 0 5px #ffffff, /* Ajusta el color del brillo */
-                 0 0 10px #ffffff,
-                 0 0 15px #d8c190; 
-                             
-    transition: text-shadow 0.3s ease-in-out; /* Suaviza la transición */
+    text-shadow: 0 0 5px #ffffff,
+        /* Ajusta el color del brillo */
+        0 0 10px #ffffff,
+        0 0 15px #d8c190;
+
+    transition: text-shadow 0.3s ease-in-out;
+    /* Suaviza la transición */
 }
 
 @media only screen and (max-width: 800px) {
-/* carrusel de drinks */
-.carousel-slide-drink {
-    align-items: normal;
-    
-}
+
+    /* carrusel de drinks */
+    .carousel-slide-drink {
+        align-items: normal;
+
+    }
 }
 
 @media only screen and (max-width: 525px) {
     nav {
         justify-content: flex-start;
     }
+
     nav a img {
         min-width: 120px;
         height: auto;
@@ -345,46 +352,19 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 418px) {
-    .header{
+    .header {
         font-size: clamp(0.65em, 3vw - 1em, 1.3em);
     }
+
     nav a img {
         min-width: 120px;
         height: auto;
         max-height: 50px;
     }
-    footer{
+
+    footer {
         font-size: clamp(0.6em, 4vw - 1em, 1rem)
     }
 }
 
 
-/* Teléfonos pequeños (320px - 480px) */
-@media only screen and (max-width: 480px) {
-    /* Estilos para teléfonos pequeños */
-}
-
-/* Teléfonos medianos (481px - 767px) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* Estilos para teléfonos medianos */
-}
-
-/* Tabletas (768px - 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos para tabletas */
-}
-
-/* Laptops y desktops pequeñas (1025px - 1280px) */
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    /* Estilos para laptops y desktops pequeñas */
-}
-
-/* Laptops y desktops grandes (1281px - 1600px) */
-@media only screen and (min-width: 1281px) and (max-width: 1600px) {
-    /* Estilos para laptops y desktops grandes */
-}
-
-/* Pantallas extra grandes (>1600px) */
-@media only screen and (min-width: 1601px) {
-    /* Estilos para pantallas extra grandes */
-}
