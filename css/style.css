@@ -111,8 +111,23 @@ main {
     margin-bottom: 10px;
 }
 
+/* Button select drink */
+.tragos-select{
+    display: flex;
+    flex-direction: column;
+}
+
 #tragos h2 {
     margin-left: 10px;
+}
+
+#drink-type{
+    width: 150px;
+    height: auto;
+    font-size: 1rem;
+    padding: 18px;
+    margin-left: 10px;
+    border: var(--primary-border);
 }
 
 /* Estilos generales del carousel */
@@ -356,6 +371,11 @@ footer a:hover {
     .carousel-slide-drink {
         align-items: normal;
     }
+    #drink-type{
+        width: 140px;
+        font-size: 0.8rem;
+        padding: 15px;
+    }
 }
 
 @media only screen and (max-width: 525px) {
@@ -372,6 +392,12 @@ footer a:hover {
     .carousel-slide-drink h3 {
         font-size: 1.1rem;
     }
+
+    #drink-type{
+        width: 120px;
+        font-size: 0.7rem;
+        padding: 10px;
+    }
 }
 
 @media only screen and (max-width: 418px) {
@@ -383,6 +409,12 @@ footer a:hover {
         min-width: 120px;
         height: auto;
         max-height: 50px;
+    }
+
+    #drink-type{
+        width: 100px;
+        font-size: 0.65rem;
+        padding: 8px;
     }
 
     footer {
