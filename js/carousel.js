@@ -31,6 +31,3 @@ function setupCarousel(trackSelector, nextButtonSelector, prevButtonSelector) {
         updateSlidePosition();
     });
 }
-
-
-

@@ -65,4 +65,3 @@ async function initCarousel(trackId, nextButtonId, prevButtonId) {
 
 // Llama a la función con los IDs de los elementos del carrusel
 initCarousel('.carousel-track', '.carousel-button.next', '.carousel-button.prev');
-

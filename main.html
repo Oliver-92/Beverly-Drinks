@@ -18,11 +18,15 @@
 </head>
 
 <body id="top">
+    <!--Header-->
     <header class="header">
+        <!--Nav-->
         <nav>
+            <!--Logo-->
             <a href="#top">
                 <img src="./img/Logo_3.1.png" alt="Logo">
             </a>
+            <!--Nav Menu-->
             <ul class="menu">
                 <li><a href="#tragos">Tragos</a></li>
                 <li><a href="#sucursales">Sucursales</a></li>
@@ -30,13 +34,15 @@
             </ul>
         </nav>
     </header>
+    <!--Main-->
     <main>
+        <!--Banner-->
         <section id="banner">
             <div class="banner-container">
             </div>
-            <!--<img src="./img/banner_2.png" alt="banner">-->
             <hr>
         </section>
+        <!--Drinsk Section-->
         <section id="tragos">
             <h2>Nuestros Tragos</h2>
             <div id="first-carousel" class="carousel">
@@ -46,6 +52,7 @@
             </div>
             <hr>
         </section>
+        <!--Sucursales Section-->
         <section id="sucursales">
             <h2>Sucursales</h2>
             <div class="carousel" id="carousel-2">
@@ -123,25 +130,25 @@
                 <button class="carousel-button prev">⬅</button>
                 <button class="carousel-button next">➡</button>
             </div>
-
             <hr>
         </section>
+        <!--Contact Section-->
         <section id="contacto">
             <h2>Contactanos</h2>
             <div class="container-contact">
                 <img src="./img/contacto.jpg" alt="barman-sonriente">
                 <form action="https://formspree.io/f/xblrvqab" method="post">
                     <label for="name">Nombre: </label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
 
                     <label for="phone">Teléfono: </label>
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" required>
 
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
 
                     <label for="comment">Comentario:</label>
-                    <textarea name="comment" id="comment"></textarea>
+                    <textarea name="comment" id="comment" required></textarea>
 
                     <input class="btn" type="submit" value="Enviar">
                     <input class="btn" type="reset" value="Borrar">
@@ -150,16 +157,18 @@
             <hr>
         </section>
     </main>
+    <!--Footer-->
     <footer>
         <p>Encontranos en nuestras redes sociales</p>
         <div>
-            <a href="www.facebook.com" target="_blank"><i class="fi fi-brands-facebook"></i></a>
-            <a href="www.instagram.com" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-            <a href="www.hotmail.com" target="_blank"><i class="fi fi-brands-twitter"></i></a>
+            <a href="https://github.com/Oliver-92" target="_blank"><i class="fi fi-brands-facebook"></i></a>
+            <a href="https://github.com/Oliver-92" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+            <a href="https://github.com/Oliver-92" target="_blank"><i class="fi fi-brands-twitter"></i></a>
         </div>
         <p>2024. Todos los derechos reservados. Site by <a href="https://www.linkedin.com/in/ezequiel-oliver/"
                 target="_blank">Ezequiel Oliver</a></p>
     </footer>
+    <!--Scripts js-->
     <script src="./js/carousel.js"></script>
     <script src="./js/api.js"></script>
     <script>
