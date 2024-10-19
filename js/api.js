@@ -12,14 +12,10 @@ async function fetchCocktails() {
 
 // Función para renderizar los tragos en el carrusel
 function renderCocktails(drinks, trackId) {
-    const track = document.querySelector(trackId);  // Identificar el carrusel correspondiente
-    drinks.forEach((drink, index) => {
+    const track = document.querySelector(trackId);
+    drinks.forEach((drink) => {
         const slide = document.createElement('div');
         slide.classList.add('carousel-slide-drink');
-        // Añadir la clase 'active' al primer slide
-        if (index === 0) {
-            slide.classList.add('active');
-        }
         slide.innerHTML = `
             <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
             <h3>${drink.strDrink}</h3>
@@ -28,9 +24,45 @@ function renderCocktails(drinks, trackId) {
     });
 }
 
+// Función para manejar el carrusel
+function setupCarousel(trackId, nextButtonId, prevButtonId) {
+    const track = document.querySelector(trackId);
+    const slides = Array.from(track.children);
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        track.style.transform = `translateX(${offset}%)`;
+    }
+
+    document.querySelector(nextButtonId).addEventListener('click', () => {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;  // Volver al primer slide
+        }
+        updateCarousel();
+    });
+
+    document.querySelector(prevButtonId).addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = slides.length - 1;  // Ir al último slide
+        }
+        updateCarousel();
+    });
+
+    updateCarousel(); // Inicializa la posición del carrusel
+}
+
 // Inicialización
-async function initCarousel(trackId) {
+async function initCarousel(trackId, nextButtonId, prevButtonId) {
     const drinks = await fetchCocktails();
     renderCocktails(drinks, trackId);
+    setupCarousel(trackId, nextButtonId, prevButtonId);
 }
+
+// Llama a la función con los IDs de los elementos del carrusel
+initCarousel('.carousel-track', '.carousel-button.next', '.carousel-button.prev');
 
