@@ -28,7 +28,7 @@
             </a>
             <!--Nav Menu-->
             <ul class="menu">
-                <li><a href="#tragos">Tragos</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
                 <li><a href="#sucursales">Sucursales</a></li>
                 <li><a href="#contacto">Contactanos</a></li>
             </ul>
@@ -40,27 +40,23 @@
         <section id="banner">
             <div class="banner-container">
             </div>
-            <hr>
         </section>
-        <!--Drinsk Section-->
-        <section id="tragos">
-            <div class="tragos-select">
-                <h2>Nuestros Tragos</h2>
-                <label for="drink-type"></label>
-                <select id="drink-type">
-                    <option value="margarita">Margarita</option>
-                    <option value="mojito">Mojito</option>
-                    <option value="vodka">Vodka</option>
-                    <option value="wine">Wine</option>
-                    <option value="gin">Gin</option>
-                </select>
+        <!--Nosotros Section-->
+        <section id="about-us">
+            <div class="about-us-container">
+                <div class="about-us-container-info">
+                    <h3>Nosotros</h3>
+                    <p>En Beverly Drinks, nos apasiona crear experiencias inolvidables. Nuestro bar combina el estilo clásico y una
+                        atmósfera vibrante donde cada bebida es preparada con dedicación, mezclando sabores únicos y frescos. Desde
+                        cócteles emblemáticos hasta creaciones originales, buscamos ofrecer una carta que deleite todos los gustos. Ven
+                        a disfrutar de buena música, un ambiente acogedor y, sobre todo, momentos memorables con amigos y familia.
+                        ¡Bienvenidos a Beverly Drinks, donde cada noche es especial!</p>
+                </div>
+                <div class="about-us-container-img">
+                    <img src="./img/bar-04.jpg" alt="">
+                </div>
             </div>
-            <div id="first-carousel" class="carousel">
-                <div class="carousel-track"></div>
-                <button class="carousel-button prev">⬅</button>
-                <button class="carousel-button next">➡</button>
-            </div>
-            <hr>
+            
         </section>
         <!--Sucursales Section-->
         <section id="sucursales">
@@ -178,16 +174,7 @@
         <p>2024. Todos los derechos reservados. Site by <a href="https://www.linkedin.com/in/ezequiel-oliver/"
                 target="_blank">Ezequiel Oliver</a></p>
     </footer>
-    <!--Scripts js-->
-    <script src="./js/carousel.js"></script>
-    <script src="./js/api.js"></script>
-    <script>
-        // Inicializar carruseles por ID
-        initCarousel('#first-carousel .carousel-track').then(() => {
-            setupCarousel('#first-carousel .carousel-track', '#first-carousel .next', '#first-carousel .prev');
-        });
-        setupCarousel('#carousel-2 .carousel-track', '#carousel-2 .next', '#carousel-2 .prev');
-    </script>
+    
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #d8c190;
+    --secundary-color: #212222;
     --primary-border: #d8c190 1px solid;
 }
 
@@ -10,7 +11,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: #212222;
+    background-color: var(--secundary-color);
     color: var(--primary-color);
     font-family: "Merriweather", serif;
     max-width: 100vw;
@@ -40,7 +41,6 @@ h2 {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 5px 0;
     height: 100px;
 }
@@ -77,7 +77,6 @@ nav a img {
 }
 
 main {
-    margin-top: 130px;
     width: 100%;
 }
 
@@ -87,116 +86,61 @@ main {
 
 /* Banner Section */
 
-#banner {
-    margin-bottom: 10px;
-}
-
 .banner-container {
     width: auto;
-    height: 85vh;
+    height: 100vh;
     background-image: url('../img/banner-04.jpeg');
     background-size: cover;
     border-bottom: var(--primary-border);
 }
 
-/* Drinks Section */
+/* About us Section */
 
-#tragos {
+#about-us {
+    background-color: #ffffff;
+    width: auto;
+    height: 100vh;
+    border-bottom: var(--primary-border);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    scroll-margin-top: 140px;
-    width: 100%;
-    height: 84vh;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
-/* Button select drink */
-.tragos-select{
-    display: flex;
-    flex-direction: column;
-}
-
-#tragos h2 {
-    margin-left: 10px;
-}
-
-#drink-type{
-    width: 150px;
-    height: auto;
-    font-size: 1rem;
-    padding: 18px;
-    margin-left: 10px;
-    border: var(--primary-border);
-}
-
-/* Estilos generales del carousel */
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;
-    padding: 1rem;
-}
-
-/* Estilo de cada slide del carrusel de drinks */
-.carousel-slide-drink {
-    min-width: 100%;
+.about-us-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0 1rem;
+    align-items:flex-start;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
 }
 
-/* Estilo de la imagen del trago */
-.carousel-slide-drink img {
-    border: #d8c190 3px solid;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    max-height: 600px;
+.about-us-container-info{
+    height: 700px;
+    width: 400px;
+    background-color: #ffffff;
 }
 
-/* Estilo del nombre del trago */
-.carousel-slide-drink h3 {
-    font-size: 1.5em;
-    color: var(--primary-color);
-    margin: 10px 0;
-    font-family: "Merriweather", serif;
+.about-us-container-img{
+    height: 700px;
+    width: auto;
 }
 
-/* Botones de navegación */
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(255, 255, 255, 0.8);
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 1;
+.about-us-container-img > img{
+    height: 100%;
 }
 
-.carousel-button:hover {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+.about-us-container-info h3{
+    background-color: #ffffff;
+    font-size: 3rem;
+    color: var(--secundary-color);
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+.about-us-container-info p{
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: var(--secundary-color);
 }
 
 /* Sucursales Section */
