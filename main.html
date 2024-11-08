@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Abel:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <!--Iconos-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
@@ -60,83 +60,37 @@
         </section>
         <!--Sucursales Section-->
         <section id="sucursales">
-            <h2>Sucursales</h2>
-            <div class="carousel" id="carousel-2">
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <!-- Primera tarjeta -->
-                        <li class="carousel-slide current-slide">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="./img/bar-01.jpg" alt="bar-fachada">
-                                </div>
-                                <div class="card-info">
-                                    <div class="card-info-text">
-                                        <h3>La Plata</h3>
-                                        <p>Horario: 19:00 - 02:00 hs</p>
-                                        <p>Email: beverly.laplata@gmail.com</p>
-                                        <p>Dirección: 49 nº 709</p>
-                                        <p>Teléfono: 450-0000</p>
-                                    </div>
-                                    <div class="card-info-map">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.8025147034195!2d-57.95408216107425!3d-34.91636019382919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e630e6a88a81%3A0xeffe977bf468bb7!2sC.%2049%20709%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728248743607!5m2!1ses-419!2sar"
-                                            allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Segunda tarjeta -->
-                        <li class="carousel-slide">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="./img/bar-02.jpg" alt="bar-fachada">
-                                </div>
-                                <div class="card-info">
-                                    <div class="card-info-text">
-                                        <h3>City Bell</h3>
-                                        <p>Horario: 19:00 - 02:00 hs</p>
-                                        <p>Email: beverly.bell@gmail.com</p>
-                                        <p>Dirección: Diag. 3 nº 146</p>
-                                        <p>Teléfono: 450-1111</p>
-                                    </div>
-                                    <div class="card-info-map">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.3795502872182!2d-58.046571630340964!3d-34.86833159797019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de7b48b67d87%3A0x11c043d4dd67976!2sDiag.%203%20146%2C%20B1896%20City%20Bell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728249432024!5m2!1ses-419!2sar"
-                                            allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Tercera tarjeta -->
-                        <li class="carousel-slide">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="./img/bar-03.jpg" alt="bar-fachada">
-                                </div>
-                                <div class="card-info">
-                                    <div class="card-info-text">
-                                        <h3>Gonnet</h3>
-                                        <p>Horario: 19:00 - 02:00 hs</p>
-                                        <p>Email: beverly.gonnet@gmail.com</p>
-                                        <p>Dirección: 485 nº 4466</p>
-                                        <p>Teléfono: 450-2222</p>
-                                    </div>
-                                    <div class="card-info-map">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.0738737728493!2d-58.04394194863341!3d-34.90274156687652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2ddb0d9f4eafb%3A0x214900ac03f146f4!2sC.%20485%204466%2C%20B1898%20Gonnet%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728249926464!5m2!1ses-419!2sar"
-                                            allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <h2>Nuestras Sucursales</h2>
+            <div class="sucursales-container">
+                <!--Card-->
+                <div class="sucursales-card">
+                    <div class="sucursales-card-img">
+                        <img src="./img/bar-01.jpg" alt="fachada-de-bar">
+                    </div>
+                    <div class="sucursales-card-title">
+                        <h3>La Plata</h3>
+                    </div>
                 </div>
-                <!-- Botones de navegación -->
-                <button class="carousel-button prev">⬅</button>
-                <button class="carousel-button next">➡</button>
+                <!--Card-->
+                <div class="sucursales-card">
+                    <div class="sucursales-card-img">
+                        <img src="./img/bar-02.jpg" alt="fachada-de-bar">
+                    </div>
+                    <div class="sucursales-card-title">
+                        <h3>City Bell</h3>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="sucursales-card">
+                    <div class="sucursales-card-img">
+                        <img src="./img/bar-03.jpg" alt="fachada-de-bar">
+                    </div>
+                    <div class="sucursales-card-title">
+                        <h3>Gonnet</h3>
+                    </div>
+                </div>
             </div>
-            <hr>
+            
         </section>
         <!--Contact Section-->
         <section id="contacto">
